@@ -4,24 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indización y búsqueda</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
     <h1>Actividad de aprendizaje 4!</h1>
     <div>
         <form action="#" method="post" enctype="multipart/form-data">
-            <input type="file" name="archivos" id="archivos" accept=".txt" multiple>
+            <!--Input Selección y subida de archivos txt-->
+            <input type="file" name="archivos" id="archivos" accept=".txt" multiple> 
             <input type="submit" value="Subir Archivos">
         </form>
     </div>
 </body>
-<script>
-    // Manejar la selección de archivos
-    document.getElementById('archivos').addEventListener('change', function() {
-        var archivos = this.files;
-        for (var i = 0; i < archivos.length; i++) {
-            console.log(archivos[i].name);
-        }
-    });
-</script>
 
+<script src="index.js"></script>
 </html>
